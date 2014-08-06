@@ -132,11 +132,8 @@ void draw() {
     for (int i=0;i<m.length;i++) {
  m [i] = Integer.parseInt(arduino[i]);
       //Declaro los tags de los mensajes OSC
-      println("sensor 0: "+m[0]);
-      println("sensor 1: "+m[1]);
-      println("sensor 2: "+m[2]);
-      println("sensor 3: "+m[3]);
-
+      println("sensor "+i+":"+m[i]);
+     
       OscMessage myMessage0 = new OscMessage("/sensor_0");
       myMessage0.add(arduino[0]);
       oscP5.send(myMessage0, myRemoteLocation);
