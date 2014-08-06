@@ -9,7 +9,7 @@ int timerOff=50;
 
 
 int sensorPin[]={
-  A3, A4, A5, A6};
+ A0, A1, A2, A3};
 int valSensor[ARRAY_SIZE];
 int value[ARRAY_SIZE];
 
